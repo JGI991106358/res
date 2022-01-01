@@ -2,13 +2,23 @@ import Vue from 'vue'
 import VueRouter from 'vue-router'
 import Login from '@/components/Login'
 import Home from '@/components/Home'
+import Welcome from '@/components/Welcome'
+import Users from '@/components/users/User'
 Vue.use(VueRouter)
 
 const routes = [
   // 根路径重定向到登入界面
   { path: '/', redirect: '/login' },
   { path: '/login', component: Login },
-  { path: '/home', component: Home }
+  {
+    path: '/home',
+    component: Home,
+    redirect: 'welcome',
+    children: [
+      { path: '/welcome', component: Welcome },
+      { path: '/users', component: Users }
+    ]
+  }
 ]
 
 const router = new VueRouter({

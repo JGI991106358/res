@@ -74,13 +74,14 @@ export default {
 
 <style lang="less" scoped>
  .login_container {
-   background-color: #2b4b6b;
+   background-color: #eee;
    height: 100%;
    .login_box {
      width: 450px;
      height: 300px;
      background-color: #fff;
      border-radius: 3px;
+      box-shadow: 3px 10px 5px #888888;
      position: absolute;
      left: 50%;
      top: 50%;
