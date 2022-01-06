@@ -3,6 +3,8 @@ html, body, #app {
   height: 100%;
   margin: 0;
   padding: 0;
+  /* 添加最小宽度后就不会出现换行的情况了 */
+  min-width: 1366px;
 }
 .el-breadcrumb {
   padding: 15px 0;

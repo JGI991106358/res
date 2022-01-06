@@ -8,7 +8,7 @@ import 'element-ui/lib/theme-chalk/index.css'
 import '@/assets/css/grlobal.css'
 import '@/assets/fonts/iconfont.css'
 // 按需引入
-import { Button, Form, FormItem, Input, Message, MessageBox, Pagination, Tooltip, Dialog, Container, Header, Switch, Table, TableColumn, Aside, Main, Row, Col, Card, Menu, Submenu, MenuItemGroup, MenuItem, Breadcrumb, BreadcrumbItem } from 'element-ui'
+import { Button, Form, FormItem, Input, Message, MessageBox, Tree, Tag, Pagination, Tooltip, Dialog, Container, Header, Switch, Table, TableColumn, Aside, Main, Row, Col, Card, Menu, Submenu, MenuItemGroup, MenuItem, Breadcrumb, BreadcrumbItem } from 'element-ui'
 
 // 设置请求根路径，并且将axios挂载到vue原型上
 axios.defaults.baseURL = 'http://127.0.0.1:8888/api/private/v1/'
@@ -49,6 +49,8 @@ Vue.use(TableColumn)
 Vue.use(Tooltip)
 Vue.use(Pagination)
 Vue.use(Dialog)
+Vue.use(Tag)
+Vue.use(Tree)
 
 // 全局挂载使用弹框提示
 Vue.prototype.$message = Message
